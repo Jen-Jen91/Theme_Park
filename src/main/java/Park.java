@@ -1,7 +1,7 @@
 public class Park extends Attraction {
 
-    public Park(String name) {
-        super(name);
+    public Park(String name, int rating) {
+        super(name, rating);
     }
 
 }

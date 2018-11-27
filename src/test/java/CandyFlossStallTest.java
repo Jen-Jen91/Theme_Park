@@ -9,12 +9,17 @@ public class CandyFlossStallTest {
 
     @Before
     public void before() {
-        candyFloss = new CandyFlossStall("Fluffy", "Luna", 105);
+        candyFloss = new CandyFlossStall("Fluffy", 9,"Luna", 105);
     }
 
     @Test
     public void hasName() {
         assertEquals("Fluffy", candyFloss.getName());
+    }
+
+    @Test
+    public void hasRating() {
+        assertEquals(9, candyFloss.getRating());
     }
 
     @Test

@@ -9,12 +9,17 @@ public class IceCreamStallTest {
 
     @Before
     public void before() {
-        iceCream = new IceCreamStall("Frosty", "Sarah", 121);
+        iceCream = new IceCreamStall("Frosty", 8,"Sarah", 121);
     }
 
     @Test
     public void hasName() {
         assertEquals("Frosty", iceCream.getName());
+    }
+
+    @Test
+    public void hasRating() {
+        assertEquals(8, iceCream.getRating());
     }
 
     @Test

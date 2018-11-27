@@ -11,7 +11,7 @@ public class PlaygroundTest {
 
     @Before
     public void before() {
-        playground = new Playground("Adventure Land");
+        playground = new Playground("Adventure Land", 9);
         visitor1 = new Visitor("Jack", 12, 130, 2);
         visitor2 = new Visitor("Jill", 16, 150, 10);
     }
@@ -19,6 +19,11 @@ public class PlaygroundTest {
     @Test
     public void hasName() {
         assertEquals("Adventure Land", playground.getName());
+    }
+
+    @Test
+    public void hasRating() {
+        assertEquals(9, playground.getRating());
     }
 
     @Test
