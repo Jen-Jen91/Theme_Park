@@ -1,5 +1,3 @@
-package Attractions;
-
 public abstract class Attraction {
 
     protected String name;
