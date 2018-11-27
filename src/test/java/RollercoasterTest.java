@@ -14,7 +14,7 @@ public class RollercoasterTest {
     public void before() {
         rollercoaster = new Rollercoaster("Oblivion", 7);
         visitor1 = new Visitor("Bella", 13, 150, 5);
-        visitor2 = new Visitor("Milo", 11, 160, 5);
+        visitor2 = new Visitor("Milo", 11, 210, 5);
         visitor3 = new Visitor("Fizz", 14, 140, 5);
     }
 
@@ -41,6 +41,16 @@ public class RollercoasterTest {
     @Test
     public void visitorUnder145NotAllowed() {
         assertEquals(false, rollercoaster.isAllowed(visitor3));
+    }
+
+    @Test
+    public void hasDefaultPrice() {
+        assertEquals(8.40, rollercoaster.defaultPrice(), 0.01);
+    }
+
+    @Test
+    public void doublePriceForTallVisitor() {
+        assertEquals(16.80, rollercoaster.priceFor(visitor2), 0.01);
     }
 
 }
