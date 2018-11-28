@@ -11,4 +11,8 @@ public class TobaccoStall extends Stall implements ISecurity{
         return false;
     }
 
+    public double defaultPrice() {
+        return 6.60;
+    }
+
 }

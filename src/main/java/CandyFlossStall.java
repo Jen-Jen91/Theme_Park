@@ -4,4 +4,8 @@ public class CandyFlossStall extends Stall {
         super(name, rating, ownerName, parkingSpot);
     }
 
+    public double defaultPrice() {
+        return 4.20;
+    }
+
 }

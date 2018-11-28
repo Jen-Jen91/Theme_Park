@@ -48,7 +48,6 @@ public class TobaccoStallTest {
 
     @Test
     public void hasPrice() {
-        tobaccoStall.setPrice(6.60);
         assertEquals(6.60, tobaccoStall.defaultPrice(), 0.01);
     }
 }

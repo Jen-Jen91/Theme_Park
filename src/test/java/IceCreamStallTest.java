@@ -34,7 +34,6 @@ public class IceCreamStallTest {
 
     @Test
     public void hasPrice() {
-        iceCream.setPrice(2.80);
         assertEquals(2.80, iceCream.defaultPrice(), 0.01);
     }
 }

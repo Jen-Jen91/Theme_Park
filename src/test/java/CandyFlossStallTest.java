@@ -34,7 +34,6 @@ public class CandyFlossStallTest {
 
     @Test
     public void hasPrice() {
-        candyFloss.setPrice(4.20);
         assertEquals(4.20, candyFloss.defaultPrice(), 0.01);
     }
 
